@@ -1,0 +1,37 @@
+<nav class="box-wrapper" aria-label="main navigation">
+  <div class="box-inner">
+    <div class="header-main">
+      <div class="header-logo">
+        {% if (page.top == 'true') %}<h1>{% else %}<p>{% endif %}
+            <a href="/" class="header-site-logo"><img src="http://placehold.jp/f0f0f0/d0d0d0/820x150.svg?text=LOGO"
+                alt="{{global.site.sitename}}"></a>
+            {% if (page.top == 'true') %}</h1>{% else %}</p>{% endif %}
+        <a href="javascript:;" class="navbar-opener"></a>
+      </div>
+      <div class="header-info">
+        <div class="header-info-contact">
+
+          <a href="#">
+            <p class="tel"><img src="/images/icon-tel-blue.svg" alt="">
+              000-0000-0000</p>
+          </a>
+          <p class="address">〒000-0000<br>東京都●●●●●●●●●<br>●●●●●●●●●</p>
+        </div>
+        <div class="header-info-online">
+          <a href="#"><img src="/images/bnr-online-reserved-pc-01.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-block">
+      <ul class="navbar">
+        {% for item in global.nav.header %}
+        <li class="{{item.class}}">
+          <a href="{{ item.url if item.url else '#' | safe }}">
+            <p>{{item.label | striptags(true) | escape | nl2br}}</p><span>{{item.label_en}}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

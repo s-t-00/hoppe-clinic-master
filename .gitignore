@@ -1,0 +1,12 @@
+# ignore node dependency directories
+node_modules/
+.git/
+.quarantine/
+.tmb/
+_info/
+dest/
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite

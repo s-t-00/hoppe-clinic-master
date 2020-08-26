@@ -1,0 +1,224 @@
+/* ----------------------------------------------------------------
+header
+-------------------------------------------------------------------*/
+@include sp {
+  .header-main {
+    display: block;
+  }
+
+  .header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 20px;
+
+    .header-site-logo img {
+      height: 30px;
+    }
+
+    a.navbar-opener {
+      background-image: url(/images/navbar-opener.svg);
+      background-size: contain;
+      right: 20px;
+      top: 22px;
+      width: 24px;
+      height: 30px;
+    }
+  }
+
+  .header-info,
+  .navbar-block {
+    display: none;
+  }
+
+  .navbar-block {
+    left: 20px;
+    top: 45px;
+    width: calc(100% - 40px);
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 100;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        flex-basis: 50%;
+        padding: 10px 15px 10px 30px;
+        @include font-size(13);
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 15px;
+          width: 8px;
+          height: 13px;
+          margin-top: -7px;
+          background: url(/images/arrow-l-black.svg) top left no-repeat;
+          background-size: 8px 13px;
+        }
+
+        &:nth-child(1) {
+          background: $color-green;
+
+          p {
+            color: $color-white;
+          }
+        }
+
+        &:nth-child(2) {
+          background: $color-light-green;
+          background-color: #47AF53;
+          position: static;
+
+
+          p {
+            color: $color-white;
+          }
+        }
+
+        span {
+          display: none;
+        }
+      }
+
+      li:nth-child(1)::before,
+      li:nth-child(2)::before {
+        background: url(/images/arrow-l-white.svg) top left no-repeat;
+        background-size: 8px 13px;
+      }
+    }
+  }
+}
+
+
+@include desktop {
+  .header {
+    .box-inner {
+      padding: 20px 0;
+    }
+
+    .header-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .header-logo {
+      padding: 0;
+      vertical-align: middle;
+
+      .header-site-logo img {
+        height: 75px;
+        width: auto;
+      }
+
+      a.navbar-opener {
+        display: none;
+      }
+    }
+
+    .header-info {
+      display: flex;
+      align-items: flex-start;
+      line-height: 1.2;
+
+      .header-info-contact {
+        text-align: right;
+        margin-right: 10px;
+
+        p.tel {
+          @include font-size(40);
+          position: relative;
+          font-weight: bold;
+          color: $color-green;
+
+          &::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: -33px;
+            width: 33px;
+            height: 33px;
+            margin-top: -16px;
+            background: url(/images/icon-tel-green.svg) top left no-repeat;
+            background-size: 33px 33px;
+          }
+        }
+
+        p.address {
+          @include font-size(16);
+        }
+      }
+
+      .header-info-online {
+        width: 186px;
+      }
+    }
+
+    .navbar-block {
+      margin-top: 30px;
+      vertical-align: middle;
+
+      ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        li {
+          display: block;
+          text-align: center;
+          font-weight: bold;
+          position: relative;
+          flex-basis: 20%;
+
+          &::before {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 45px;
+            top: 0;
+            left: 0;
+            background: $color-green;
+          }
+
+          a {
+            padding: 0;
+            display: block;
+
+            p {
+              @include font-size(15);
+              color: $color-black;
+            }
+
+            span {
+              @include font-size(12);
+              color: $color-green;
+            }
+          }
+        }
+
+        li:nth-child(1),
+        li:nth-child(2) {
+          display: none;
+        }
+
+        li:last-child {
+          &::after {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 45px;
+            top: 0;
+            right: 0;
+            background: $color-green;
+          }
+        }
+      }
+    }
+  }
+}

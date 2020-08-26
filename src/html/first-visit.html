@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+{% set page = {
+    "title": "初診の方へ"
+} %}
+{% block content %}
+
+<section class="first-visit-main-visual">
+  <div class="first-visit-main-image">
+    <h1 class="title">{{page.title}}</h1>
+  </div>
+</section>
+
+<section class="main-contetns">
+  <div class="contents-container">
+    <div class="main-wrappe">
+      <div class="first-visit-column">
+        <h2>初診の方へ</h2>
+        <div class="first-visit-note">
+          <ul>
+            {% set note = {
+              "list": [
+                {
+                    "hd": "保険診療を受ける方へ",
+                    "text": "初診の際は保険証・医療証等を必ずお持ちください。保険証の確認が取れない場合は保険診療として取り扱うことができませんのでご注意ください。",
+                    "attention": "保険証の期限切れには十分ご注意ください"
+                },  {
+                    "hd": "診察・検査の進め方について",
+                    "text": "初診の方は問診表を記入していただき、治療計画を明確にいたします。その他、●○●○●○については●○●○●○等の診察・検査の進め方についてのコピーが入ります。",
+                    "attention": ""
+                },  {
+                  "hd": "診察所要時間・費用について",
+                  "text": "所要時間・費用ともに、ご希望があればご相談ください。診療する内容に応じて、保険診療、自費診療（保険外診療）を提案いたします。",
+                  "attention": ""
+                },  {
+                  "hd": "インターネットからの診察ご予約について",
+                  "text": "ここに、インターネットからの診察ご予約についての説明コピーが入ります。<br>ここに、インターネットからの診察ご予約についての説明コピーが入ります。ここに、インターネットからの診察ご予約についての説明コピーが入ります。",
+                  "attention": ""
+                },  {
+                  "hd": "プライバシーポリシー",
+                  "text": "当院が皆様の個人情報を収集する場合、診療・看護および皆様の医療に関わる範囲でのみ行います。その他の目的に個人情報を利用する場合は利用目的を予めお知らせし、ご了承を得た上で実施いたします。<br>また当院は、皆様の個人情報について、正確かつ最新の状態を保ち、皆様の個人情報の漏洩、紛失、破壊、改ざんまたは皆様の個人情報への不正なアクセスを防止することに努めます。",
+                  "attention": ""
+                }
+              ]
+            } %}
+
+            {% for item in note.list %}
+            <li>
+              <h3>{{item.hd | safe}}</h3>
+              <p>{{item.text | safe}}</p>
+              {% if (item.attention == '') %}
+              {% else %}
+              <div class="note">{{item.attention | safe}}</div>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <!-- first-visit-main-note -->
+        <figure class="reserved-bnr pc-none"><a href="#"><img src="/images/bnr-online-reserved-sp-01.svg" alt=""></a>
+        </figure>
+      </div>
+      <!-- menu-column -->
+    </div>
+    <!-- main-wrappe -->
+
+    {% include '_sub-nav.html' %}
+    <!-- sub-wrappe -->
+  </div>
+</section>
+
+
+{% endblock %}

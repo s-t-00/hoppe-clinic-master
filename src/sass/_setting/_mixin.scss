@@ -1,0 +1,47 @@
+// media query
+// -----------------------------------
+@mixin touch {
+  @media #{map-get($breakpoints, "touch")} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{map-get($breakpoints, "pc")} {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media #{map-get($breakpoints, "sp")} {
+    @content;
+  }
+}
+
+@mixin font-size($size) {
+  $rem: $size / 16;
+  font-size: $size + px;
+  font-size: $rem + rem;
+}
+
+@mixin line-height($fs, $ls) {
+  $lineHeight: $ls / $fs;
+  line-height: $lineHeight;
+}
+
+@mixin font-line-height($fs, $ls) {
+  @include font-size($fs);
+  @include line-height($fs, $ls);
+}
+
+@mixin list-icon($mark) {
+  content: $mark;
+  display: inline-block;
+  margin-right: -0.25em;
+}
+
+@mixin clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}

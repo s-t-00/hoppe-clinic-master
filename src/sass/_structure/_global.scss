@@ -1,0 +1,36 @@
+// ----------------------------------------------------------------
+// サイト基本設計
+// ----------------------------------------------------------------
+/* ----------------------------------------------------------------
+ Setting
+-------------------------------------------------------------------*/
+@include touch {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    color: $font-color;
+    font-family: $body-family;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  a, a:hover {
+    color: $font-color;
+    text-decoration: none;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+  
+  .is_notTouchDevice a:hover {
+    opacity: .8;
+  }
+}
+
+@include desktop {
+}

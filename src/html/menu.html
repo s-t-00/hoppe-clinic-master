@@ -1,0 +1,42 @@
+{% import "_data/globalConfig.html" as global %}
+{% extends 'layout.html' %}
+{% set page = {
+    "title": "診察案内"
+} %}
+{% block content %}
+
+<section class="menu-main-visual">
+  <div class="menu-main-image">
+    <h1 class="title">{{page.title}}</h1>
+  </div>
+</section>
+
+<section class="main-contetns">
+  <div class="contents-container">
+    <div class="main-wrappe">
+      <div class="menu-column">
+        <h2>診察案内</h2>
+        {% for item in global.examination.list %}
+        <div class="main-menu-list">
+          <div class="main-menu-text">
+            <h3>{{item.name | safe}}</h3>
+            <p>{{item.explanation | safe}}</p>
+          </div>
+          <figure><img src="{{item.figure}}" alt="{{item.alt}}"></figure>
+        </div>
+        <!-- main-menu-list -->
+        {% endfor %}
+        <figure class="reserved-bnr pc-none"><a href="#"><img src="/images/bnr-online-reserved-sp-01.svg" alt=""></a>
+        </figure>
+      </div>
+      <!-- menu-column -->
+    </div>
+    <!-- main-wrappe -->
+
+    {% include '_sub-nav.html' %}
+    <!-- sub-wrappe -->
+  </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,146 @@
+{% import "_data/globalConfig.html" as global %}
+{% extends 'layout.html' %}
+{% set page = {
+    "title": "",
+    "top": "true"
+} %}
+{% block content %}
+
+<section class="top-main-visual">
+  <ul class="slick-slider" slick-01>
+    <li class="slick-list"><img class="sp-none" src="http://placehold.jp/f0f0f0/d0d0d0/2572x1380.svg?text=PC01"
+        alt=""><img class="pc-none" src="http://placehold.jp/f0f0f0/d0d0d0/750x402.svg?text=SP01" alt=""></li>
+    <li class="slick-list"><img class="sp-none" src="http://placehold.jp/f0f0f0/d0d0d0/2572x1380.svg?text=PC02"
+        alt=""><img class="pc-none" src="http://placehold.jp/f0f0f0/d0d0d0/750x402.svg?text=SP02" alt=""></li>
+    <li class="slick-list"><img class="sp-none" src="http://placehold.jp/f0f0f0/d0d0d0/2572x1380.svg?text=PC03"
+        alt=""><img class="pc-none" src="http://placehold.jp/f0f0f0/d0d0d0/750x402.svg?text=SP03" alt=""></li>
+  </ul>
+</section>
+
+<section class="main-contetns">
+  <div class="contents-container">
+    <figure class="top-reserved-bnr pc-none"><a href="#"><img src="/images/bnr-online-reserved-sp-01.svg" alt=""></a>
+    </figure>
+    <div class="main-wrappe">
+      <div class="article-column">
+        <h2>よくある症状についてのご質問等</h2>
+        {% set article = {
+          "list": [
+              {
+                  "title": "コラム1トップ見出しが入ります",
+                  "text": "コラム1内容の文章が入ります、よってダミーです。コラムの文章が入ります、よってダミーです。コラムの文章が入ります、よってダミーです。<br>コラムの文章が入ります、よってダミーです。コラムの文章が入ります。",
+                  "figure": "http://placehold.jp/f0f0f0/d0d0d0/412x366.svg?text=1",
+                  "alt": "コラム1"
+              },  {
+                  "title": "コラム2トップ見出しが入ります",
+                  "text": "コラム1内容の文章が入ります、よってダミーです。コラムの文章が入ります、よってダミーです。コラムの文章が入ります、よってダミーです。コラムの文章が入ります、よってダミーです。コラムの文章が入ります。",
+                  "figure" : "http://placehold.jp/f0f0f0/d0d0d0/412x366.svg?text=2",
+                  "alt": ""
+              },  {
+                  "title": "コラム3トップ見出しが入ります",
+                  "text": "コラム1内容の文章が入ります、よってダミーです。コラムの文章が入ります、よってダミーです。コラムの文章が入ります、よってダミーです。コラムの文章が入ります、よってダミーです。コラムの文章が入ります。",
+                  "figure": "http://placehold.jp/f0f0f0/d0d0d0/412x366.svg?text=3",
+                  "alt": ""
+              },  {
+                  "title": "コラム4トップ見出しが入ります",
+                  "text": "コラム1内容の文章が入ります、よってダミーです。コラムの文章が入ります、よってダミーです。コラムの文章が入ります、よってダミーです。<br>コラムの文章が入ります、よってダミーです。コラムの文章が入ります。",
+                  "figure": "http://placehold.jp/f0f0f0/d0d0d0/412x366.svg?text=4",
+                  "alt": ""
+              },  {
+                  "title": "コラム5トップ見出しが入ります",
+                  "text": "コラム1内容の文章が入ります、よってダミーです。コラムの文章が入ります、よってダミーです。コラムの文章が入ります、よってダミーです。コラムの文章が入ります、よってダミーです。コラムの文章が入ります。",
+                  "figure": "http://placehold.jp/f0f0f0/d0d0d0/412x366.svg?text=5",
+                  "alt": ""
+              } 
+          ]
+        } %}
+
+        {% for item in article.list %}
+        <div class="article-list">
+          <div class="article-text">
+            <h3 class="top-hd">{{item.title | safe}}</h3>
+            <p>{{item.text | safe}}</p>
+          </div>
+          <figure><img src="{{item.figure}}" alt="{{item.alt}}"></figure>
+        </div>
+        <!-- article-list -->
+        {% endfor %}
+      </div>
+      <!-- article-column -->
+      <div class="info-column">
+        <h2>お知らせ</h2>
+        <dl class="info-list">
+          {% set info = {
+            "list": [
+                {
+                    "date": "2020年4月15日",
+                    "title" : "GWの診療時間について、<br>こちらはダミーです、イメージを確認するためのものです。"
+                },  {
+                    "date": "2020年4月1日",
+                    "title" : "<span class='important'>オンライン診療開始</span>"
+                },  {
+                    "date": "2020年3月11日",
+                    "title" : "テキストが入ります。テキストが入ります。"
+                }
+          
+            ]
+          } %}
+
+          {% for item in info.list %}
+          <dt>{{item.date | safe}}</dt>
+          <dd>{{item.title | safe}}</dd>
+          {% endfor %}
+        </dl>
+      </div>
+      <!-- info-column -->
+      <div class="about-column">
+        <h2>当医院のご紹介</h2>
+        <div class="about-panel">
+          ドクターの紹介内容が入ります、よってこちらはダミーです。ドクターの紹介内容が入ります、よってこちらはダミーです。ドクターの紹介内容が入ります、よってこちらはダミーです。ドクターの紹介内容が入ります、よってこちらはダミーです。ドクターの紹介内容が入ります、よってこちらはダミーです。
+          <span><a href="#" class="button">院長プロフィール</a></span>
+        </div>
+      </div>
+      <!-- about-column -->
+      <div class="menu-column">
+        <h2>診察案内</h2>
+        <ul class="examination-menu">
+          {% for item in global.examination.list %}
+          <li>{{item.name | safe}}</li>
+          {% endfor %}
+        </ul>
+        <div class="menu-panel">
+          <span><a href="#" class="button">診察案内について</a></span>
+        </div>
+      </div>
+      <!-- menu-column -->
+      <div class="first-visit-column">
+        <h2>初診の方へ</h2>
+        <div class="first-visit-panel">
+          <figure><img src="http://placehold.jp/f0f0f0/d0d0d0/710x464.svg" alt=""></figure>
+          <div class="first-visit-text">
+            <p>
+              初診の内容が入ります、よってこちらはダミーです。初診の内容が入ります、よってこちらはダミーです。初診の内容が入ります、よってこちらはダミーです。初診の内容が入ります、よってこちらはダミーです。初診の内容が入ります、よってこちらはダミーです。
+            </p>
+            <span><a href="#" class="button">初診の方へ</a></span>
+          </div>
+        </div>
+      </div>
+      <!-- first-visit-column -->
+    </div>
+    <!-- main-wrappe -->
+
+    {% include '_sub-nav.html' %}
+    <!-- sub-wrappe -->
+  </div>
+</section>
+
+<section class="map sp-none">
+  <div class="access-map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.7580301929393!2d139.6987970152587!3d35.68295958019401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ccf5503e5bd%3A0x3423e2cc25bd01e9!2z44CSMTUxLTAwNTMg5p2x5Lqs6YO95riL6LC35Yy65Luj44CF5pyo77yR5LiB55uu77yT77yY4oiS77yR77yX!5e0!3m2!1sja!2sjp!4v1596119993649!5m2!1sja!2sjp"
+      frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,66 @@
+@include touch {
+    .button {
+        width: 285px;
+        display: block;
+        text-align: left;
+        padding: 10px 15px;
+        @include font-size(20);
+        color: $color-white;
+        font-weight: bold;
+        border: 1px solid $color-white;
+        background: linear-gradient(to bottom, #3498ED, #4B60A7);
+        position: relative;
+        margin: 0 0 0 auto;
+
+        &:hover {
+            color: $color-white;
+            background: linear-gradient(to bottom, #4B60A7, #3498ED);
+            opacity: 1 !important;
+
+            &:after {
+                right: 5px;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 50%;
+            right: 15px;
+            width: 30px;
+            height: 9px;
+            margin-top: -5px;
+            background: url(/images/button-arrow-r.svg) top right no-repeat;
+            background-size: 30px 9px;
+            transition: 0.2s;
+        }
+    }
+}
+
+@include sp {
+    .button {
+        width: 100%;
+        padding: 10px 15px;
+        @include font-size(16);
+        margin: 20px 0 0;
+    }
+
+    .menu-column {
+        .button {
+            width: calc(100% - 40px);
+            margin: 0 auto;
+        }
+    }
+
+    .sub-access {
+        .button {
+            margin: 0;
+        }
+    }
+
+    .access-panel {
+        .button {
+            margin: 0;
+        }
+    }
+}

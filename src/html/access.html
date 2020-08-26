@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+{% set page = {
+    "title": "アクセス"
+} %}
+{% block content %}
+
+<section class="main-contetns">
+  <div class="contents-container">
+    <div class="main-wrappe">
+      <div class="access-column">
+        <h2>{{page.title}}</h2>
+        <div class="main-access-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.7580301929393!2d139.6987970152587!3d35.68295958019401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ccf5503e5bd%3A0x3423e2cc25bd01e9!2z44CSMTUxLTAwNTMg5p2x5Lqs6YO95riL6LC35Yy65Luj44CF5pyo77yR5LiB55uu77yT77yY4oiS77yR77yX!5e0!3m2!1sja!2sjp!4v1596119993649!5m2!1sja!2sjp"
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="access-panel">
+          <span><a href="#" class="button">Google Mapで見る</a></span>
+        </div>
+        <!-- main-access-map -->
+        <div class="main-access-info">
+          <ul>
+            {% set info = {
+              "list": [
+                {
+                    "hd": "住所",
+                    "text": "〒000-0000<br>○●県○●市○●○●○●○ビル2F○●○●○●○●クリニック"
+                },  {
+                    "hd": "最寄駅",
+                    "text": "○●○●駅○●改札口より徒歩○●分、○●○●駅○●改札口より徒歩○●分○●○●○●○●の隣です"
+                }
+              ]
+            } %}
+            {% for item in info.list %}
+            <li>
+              <h3>{{item.hd | safe}}</h3>
+              <p>{{item.text | safe}}</p>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <!-- main-access-map -->
+        <figure class="reserved-bnr pc-none"><a href="#"><img src="/images/bnr-online-reserved-sp-01.svg" alt=""></a>
+        </figure>
+      </div>
+      <!-- menu-column -->
+    </div>
+    <!-- main-wrappe -->
+
+    {% include '_sub-nav.html' %}
+    <!-- sub-wrappe -->
+  </div>
+</section>
+
+
+{% endblock %}

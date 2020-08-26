@@ -1,0 +1,77 @@
+// ----------------------------------------------------------------
+// footer
+// ----------------------------------------------------------------
+@include touch {
+  .footer {
+    background-color: $color-green;
+    padding: 20px 0;
+    color: $color-white;
+
+    .box-inner {
+      margin: 0 auto;
+    }
+  }
+
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+
+    .footer-logo {
+      img {
+        height: 58px;
+      }
+    }
+
+    .footer-info-contact {
+      display: flex;
+
+      .footer-info-address {
+        @include font-size(15);
+      }
+
+      .footer-info-tel {
+        @include font-size(35);
+        margin-left: 50px;
+        position: relative;
+
+        p {
+          &::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: -30px;
+            width: 30px;
+            height: 30px;
+            margin-top: -16px;
+            background: url(/images/icon-tel-white.svg) top left no-repeat;
+            background-size: 30px 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-copyrights {
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      @include font-size(13);
+    }
+  }
+}
+
+
+@include sp {
+  .footer-info {
+    display: none;
+  }
+
+  .footer-copyrights {
+    p {
+      @include font-size(10);
+    }
+  }
+}

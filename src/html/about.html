@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+{% set page = {
+    "title": "当医院のご紹介"
+} %}
+{% block content %}
+
+<section class="about-main-visual">
+  <div class="about-main-image">
+    <h1 class="title">{{page.title}}</h1>
+  </div>
+</section>
+
+<section class="main-contetns">
+  <div class="contents-container">
+    <div class="main-wrappe">
+      <div class="about-column">
+        <h2>当医院のご紹介</h2>
+        <div class="about-intro">
+          <div class="about-intro-text">
+            <h3>ドクターの紹介見出しコピーが入ります</h3>
+            <p>
+              ドクターの紹介内容が入ります、よってこちらはダミーです。ドクターの紹介内容が入ります、よってこちらはダミーです。ドクターの紹介内容が入ります、よってこちらはダミーです。ドクターの紹介内容が入ります、よってこちらはダミーです。ドクターの紹介内容が入ります、よってこちらはダミーです。
+            </p>
+            <dl>
+              <dt>Idiotクリニック</dt>
+              <dd>○○ ○○</dd>
+            </dl>
+          </div>
+          <figure><img src="http://placehold.jp/f0f0f0/d0d0d0/412x600.svg" alt=""></figure>
+        </div>
+        <!-- about-intro -->
+        <div class="about-history">
+          <h4>経歴</h4>
+          <ul>
+            <li>
+              <span>2000年00月</span>
+              <p>○○大学○○学部卒業</p>
+            </li>
+            <li>
+              <span>2000年00月</span>
+              <p>○○○○○○○○○○</p>
+            </li>
+            <li>
+              <span>2000年00月</span>
+              <p>○○○○クリニック開業</p>
+            </li>
+          </ul>
+        </div>
+        <!-- about-history -->
+        <div class="about-menu">
+          <h3>実施している検査・治療</h3>
+          <ul>
+            <li>●○●○●○●○●○●○検査</li>
+            <li>●○●○●○●○予防検査</li>
+            <li>●○●○●○●○●○●○検査／●○●○●○診断</li>
+            <li>●○●○●○●○●○●○治療</li>
+            <li>●○●○●○●○予防治療</li>
+            <li>●○●○●○●○●○●○治療／●○●○●○治療</li>
+          </ul>
+        </div>
+        <!-- about-menu -->
+        <figure class="reserved-bnr pc-none"><a href="#"><img src="/images/bnr-online-reserved-sp-01.svg" alt=""></a>
+        </figure>
+      </div>
+      <!-- about-column -->
+    </div>
+    <!-- main-wrappe -->
+
+    {% include '_sub-nav.html' %}
+    <!-- sub-wrappe -->
+  </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{
+    "liveSassCompile.settings.excludeList": [
+
+
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "search.exclude": {
+        "**/*.code-search": false,
+        "**/bower_components": false,
+        "**/node_modules": false
+    },
+
+
+}

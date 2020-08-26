@@ -1,0 +1,39 @@
+body{
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+.header, .main, .footer, .box-wrapper {
+  width: 100%;
+  height: auto;
+  min-width: $content-layout-sp-width;
+}
+.main{
+  flex: 1;
+}
+.box-wrapper {
+  display: block;
+  position: relative;
+  .box-inner {
+    margin: 0 auto;
+  }
+}
+.main .box-inner {
+  padding: 10px 20px;
+}
+.header::after, .main::after, .footer::after, .box-wrapper::after {
+  @include clearfix;
+}
+
+@include desktop {
+  .header, .main, .footer, .box-wrapper {
+    min-width: $content-layout-width;
+  }
+  .box-inner {
+    width: $content-layout-width;
+  }
+  .main .box-inner {
+    padding: 10px 0;
+  }
+}
+

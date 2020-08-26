@@ -1,0 +1,49 @@
+$breakpoints: ('touch': 'all',
+  'sp': 'all and (max-width: 768px)',
+  'pc': 'all and (min-width: 769px)',
+) !default;
+
+// COMMON
+$font-color: #484848;
+$color-blue: #4468BB;
+$color-green: #4BAF4B;
+$color-red: #E61B00;
+$color-white: #ffffff;
+$color-gray: #707070;
+$color-black: #1A1311;
+$color-light-blue: #4468BB;
+$color-light-green: #90B415;
+$color-bg-blue: #C5D8F3;
+$color-bg-green: #E2F4C6;
+$color-orange: #E69600;
+
+$body-family: YuGothic,
+"游ゴシック",
+"HiraKakuPro-W3",
+"Hiragino Kaku Gothic ProN",
+"ヒラギノ角ゴ ProN W3",
+"メイリオ",
+"Meiryo",
+"Meiryo UI",
+"ＭＳ Ｐゴシック",
+sans-serif;
+$sans-serif-family: 游明朝,
+"Yu Mincho",
+YuMincho,
+"Hiragino Mincho ProN",
+"Hiragino Mincho Pro",
+HGS明朝E,
+メイリオ,
+Meiryo,
+serif;
+$body-line-height: 1.5;
+$content-layout-width: 1080px;
+$content-layout-sp-width: 300px;
+
+// sticky banner
+$sticky-banner-width: 375;
+$sticky-banner-height: 190;
+
+// form control
+$control-height: 30px;
+$control-height-mobile: 45px;
