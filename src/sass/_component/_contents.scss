@@ -1,6 +1,6 @@
 @include touch {
   .main-contetns {
-    background: linear-gradient(to right, $color-white 70.83%, $color-bg-green 70.84%);
+    background: linear-gradient(to right, $color-white 70.83%, $color-bg-blue 70.84%);
 
     .contents-container {
       display: flex;
@@ -14,7 +14,7 @@
       }
 
       .sub-wrappe {
-        background-color: $color-bg-green;
+        background-color: $color-bg-blue;
         flex-basis: 315px;
         padding: 50px 0 50px 30px;
 
@@ -41,7 +41,7 @@
   }
 
   .about-panel {
-    background-color: $color-green;
+    background-color: $color-blue;
     padding: 40px 30px;
     color: $color-white;
     position: relative;
@@ -62,7 +62,7 @@
 
     .first-visit-text {
       flex-basis: calc(100% - 300px);
-      background-color: $color-green;
+      background-color: $color-blue;
       padding: 30px;
       color: $color-white;
       position: relative;
@@ -155,7 +155,7 @@
         margin-top: 20px;
 
         dt {
-          color: $color-green;
+          color: $color-blue;
           margin-right: 20px;
         }
       }
@@ -179,7 +179,7 @@
 
         .note {
           @include font-size(23);
-          background-color: $color-green;
+          background-color: $color-blue;
           color: $color-white;
           text-align: center;
           font-weight: bold;
@@ -356,7 +356,7 @@
       li {
         .note {
           @include font-size(18);
-          background-color: $color-green;
+          background-color: $color-blue;
           color: $color-white;
           text-align: center;
           font-weight: bold;
@@ -376,7 +376,7 @@
 
         .note {
           @include font-size(18);
-          background-color: $color-green;
+          background-color: $color-blue;
           color: $color-white;
           text-align: center;
           font-weight: bold;

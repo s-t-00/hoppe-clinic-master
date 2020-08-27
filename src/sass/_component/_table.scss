@@ -1,44 +1,53 @@
 @include touch {
-  .schedule-list{
+  .schedule-list {
     width: 100%;
     border: 1px solid $color-black;
     font-weight: bold;
-    th{
+
+    th {
       color: $color-white;
-      background-color: $color-green;
+      background-color: $color-blue;
       @include font-size(13);
       border-collapse: collapse;
       border: 1px solid $color-black;
       text-align: center;
-      &:first-child{
+
+      &:first-child {
         padding: 10px 5px;
       }
-      &:not(:first-child){
+
+      &:not(:first-child) {
         padding: 10px 0;
       }
     }
-    td{
+
+    td {
       background-color: $color-white;
       @include font-size(14);
       border-collapse: collapse;
       border: 1px solid $color-black;
       text-align: center;
-      &.schedule-haeder{
+
+      &.schedule-haeder {
         text-align: right;
       }
-      &:first-child{
+
+      &:first-child {
         padding: 10px 5px;
       }
-      &:not(:first-child){
+
+      &:not(:first-child) {
         padding: 10px 0;
-        color: $color-green;
-        span{
+        color: $color-blue;
+
+        span {
           color: $font-color;
         }
       }
     }
   }
-  .schedule-haeder{
+
+  .schedule-haeder {
     width: 120px;
   }
 }

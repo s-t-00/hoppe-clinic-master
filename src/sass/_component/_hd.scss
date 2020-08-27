@@ -1,7 +1,7 @@
 @include touch {
   h1.title {
     @include font-size(36);
-    color: $color-green;
+    color: $color-blue;
     font-family: $sans-serif-family;
     font-weight: bold;
     letter-spacing: 0.2em;
@@ -10,7 +10,7 @@
 
   h2 {
     font-family: $sans-serif-family;
-    color: $color-green;
+    color: $color-blue;
     @include font-size(28);
     position: relative;
     display: inline-block;
@@ -37,7 +37,7 @@
     padding-left: 16px;
     margin-bottom: 30px;
     position: relative;
-    color: $color-green;
+    color: $color-blue;
 
     &::before {
       position: absolute;
@@ -46,7 +46,7 @@
       height: 100%;
       left: 0;
       top: 0;
-      background: $color-green;
+      background: $color-blue;
     }
   }
 
@@ -55,7 +55,7 @@
   }
 
   h4 {
-    background: $color-green;
+    background: $color-blue;
     color: $color-white;
     @include font-size(25);
     font-weight: bold;

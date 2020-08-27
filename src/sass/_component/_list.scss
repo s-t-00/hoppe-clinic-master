@@ -1,64 +1,80 @@
 @include touch {
-  .article-list{
+  .article-list {
     display: flex;
-    &:not(:last-child){
+
+    &:not(:last-child) {
       margin-bottom: 60px;
     }
-    .article-text{
+
+    .article-text {
       margin-right: 40px;
       flex-basis: calc(100% - 246px);
-      p{
+
+      p {
         @include font-size(18);
       }
     }
+
     figure {
       flex-basis: 206px;
     }
   }
-  .main-menu-list{
+
+  .main-menu-list {
     display: flex;
-    &:not(:last-child){
+
+    &:not(:last-child) {
       margin-bottom: 60px;
     }
-    .main-menu-text{
+
+    .main-menu-text {
       margin-right: 40px;
       flex-basis: calc(100% - 246px);
-      p{
+
+      p {
         @include font-size(18);
       }
     }
+
     figure {
       flex-basis: 206px;
     }
   }
-  .info-list{
+
+  .info-list {
     padding: 20px;
-    border: 1px solid $color-green;
+    border: 1px solid $color-blue;
     height: 250px;
     overflow-y: scroll;
     @include font-size(18);
     font-weight: bold;
-    dt{
-      color: $color-green;
+
+    dt {
+      color: $color-blue;
       font-weight: bold;
       margin-bottom: 20px;
     }
-    dd{
+
+    dd {
       margin-bottom: 20px;
-      &:not(:last-child){
+
+      &:not(:last-child) {
         border-bottom: 1px dashed $color-gray;
         padding-bottom: 20px;
-        span.important{
+
+        span.important {
           color: $color-red;
         }
       }
     }
   }
-  .examination-menu{
+
+  .examination-menu {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    li{
+
+    li {
       font-weight: bold;
       @include font-size(23);
       padding-left: 16px;
@@ -66,62 +82,72 @@
       margin-right: 20px;
       position: relative;
       flex-basis: calc((100% - 40px) / 3);
-      &::before{
+
+      &::before {
         position: absolute;
         content: '';
         width: 6px;
         height: 100%;
         left: 0;
         top: 0;
-        background: $color-green;
+        background: $color-blue;
       }
-      &:nth-child(3){
+
+      &:nth-child(3) {
         margin-right: 0;
       }
     }
   }
-  ul.sub-menu-list{
-    li{
+
+  ul.sub-menu-list {
+    li {
       @include font-size(23);
       margin: 10px 0 10px 0;
       padding-left: 30px;
       position: relative;
-      &::before{
+
+      &::before {
         position: absolute;
         content: '●';
         left: 0px;
         top: 0;
-        color: $color-green;
+        color: $color-blue;
       }
     }
   }
-  .about-history{
-    ul{
+
+  .about-history {
+    ul {
       @include font-size(18);
       font-weight: bold;
-      li{
+
+      li {
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         margin: 10px 0;
         padding: 20px 0;
         border-bottom: 1px dashed $color-gray;
-        &:first-child{
+
+        &:first-child {
           border-top: 1px dashed $color-gray;
         }
-        span{
-          color: $color-green;
+
+        span {
+          color: $color-blue;
           margin-right: 20px;
         }
-      }  
+      }
     }
   }
-  .about-menu{
-    ul{
+
+  .about-menu {
+    ul {
       padding: 40px 30px;
-      border: 1px solid $color-green;
+      border: 1px solid $color-blue;
       @include font-size(18);
       list-style-position: inside;
-      li{
+
+      li {
         list-style-type: '・';
       }
     }
@@ -129,55 +155,67 @@
 }
 
 @include sp {
-  .article-list{
-    &:not(:last-child){
+  .article-list {
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
-    .article-text{
+
+    .article-text {
       margin-right: 20px;
       flex-basis: calc(100% - 110px);
       text-align: left;
-      p{
+
+      p {
         @include font-size(12);
       }
     }
+
     figure {
       flex-basis: 90px;
     }
   }
-  .main-menu-list{
-    &:not(:last-child){
+
+  .main-menu-list {
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
-    .main-menu-text{
+
+    .main-menu-text {
       margin-right: 20px;
       flex-basis: calc(100% - 110px);
       text-align: left;
-      p{
+
+      p {
         @include font-size(12);
       }
     }
+
     figure {
       flex-basis: 90px;
     }
   }
-  .info-list{
+
+  .info-list {
     padding: 10px;
     height: 150px;
     @include font-size(12);
     text-align: left;
-    dt{
+
+    dt {
       margin-bottom: 10px;
     }
-    dd{
+
+    dd {
       margin-bottom: 10px;
-      &:not(:last-child){
+
+      &:not(:last-child) {
         padding-bottom: 10px;
       }
     }
   }
-  .examination-menu{
-    li{
+
+  .examination-menu {
+    li {
       font-weight: bold;
       @include font-size(16);
       padding-left: 8px;
@@ -186,55 +224,66 @@
       position: relative;
       flex-basis: calc((100% - 20px) / 2);
       text-align: left;
-      &::before{
+
+      &::before {
         width: 3px;
         height: 100%;
         left: 0;
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         margin-right: 0;
       }
     }
   }
-  ul.sub-menu-list{
+
+  ul.sub-menu-list {
     display: flex;
     flex-wrap: wrap;
-    li{
+
+    li {
       @include font-size(14);
       padding-left: 20px;
       margin: 0 20px 10px 0;
       position: relative;
       flex-basis: calc((100% - 20px) / 2);
-      &::before{
+
+      &::before {
         left: 0;
         top: 0;
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         margin-right: 0;
       }
     }
   }
-  .about-history{
-    ul{
+
+  .about-history {
+    ul {
       @include font-size(12);
-      li{
+
+      li {
         margin: 5px 0;
         padding: 10px 0;
-      }  
+      }
     }
   }
-  .about-menu{
-    ul{
+
+  .about-menu {
+    ul {
       padding: 20px 15px;
       @include font-size(14);
     }
   }
+
   .first-visit-note,
-  .main-access-info{
-    ul{
-      li{
+  .main-access-info {
+    ul {
+      li {
         margin-bottom: 30px;
-        p{
+
+        p {
           @include font-size(12);
         }
       }

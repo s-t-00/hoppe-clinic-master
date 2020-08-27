@@ -2,7 +2,13 @@
 
 /* require module
 --------------------------------------------------------*/
-const { watch, src, dest, series, parallel } = require("gulp");
+const {
+    watch,
+    src,
+    dest,
+    series,
+    parallel
+} = require("gulp");
 const gulp = require("gulp");
 const del = require("delete");
 const plumber = require("gulp-plumber");
@@ -72,28 +78,44 @@ function htmlCompile() {
 }
 
 function sassComplile() {
-    return src(path.src + "sass/**/*.scss", { sourcemaps: true })
+    return src(path.src + "sass/**/*.scss", {
+            sourcemaps: true
+        })
         .pipe(plumber(notify.onError("Error: <%= error.message %>")))
-        .pipe(sass({ outputStyle: "expanded" }))
-        .pipe(sass({ outputStyle: "compressed" }))
+        .pipe(sass({
+            outputStyle: "expanded"
+        }))
+        .pipe(sass({
+            outputStyle: "compressed"
+        }))
         .pipe(postcss([autoprefixer(), mqpacker()]))
-        .pipe(dest(path.dest + "./css/", { sourcemaps: "./sourcemaps" }));
+        .pipe(dest(path.dest + "./css/", {
+            sourcemaps: "./sourcemaps"
+        }));
 }
 
 function jsComplile() {
-    return src(path.src + "js/*.js", { sourcemaps: true })
+    return src(path.src + "js/*.js", {
+            sourcemaps: true
+        })
         .pipe(plumber(notify.onError("Error: <%= error.message %>")))
         .pipe(concat("scripts.js"))
         .pipe(uglify())
-        .pipe(dest(path.dest + "./js/", { sourcemaps: "./sourcemaps" }));
+        .pipe(dest(path.dest + "./js/", {
+            sourcemaps: "./sourcemaps"
+        }));
 }
 
 function jsComplileVendor() {
-    return src(path.src + "js-vendor/*.js", { sourcemaps: true })
+    return src(path.src + "js-vendor/*.js", {
+            sourcemaps: true
+        })
         .pipe(plumber(notify.onError("Error: <%= error.message %>")))
         .pipe(concat("vendor.js"))
         .pipe(uglify())
-        .pipe(dest(path.dest + "./js/", { sourcemaps: "./sourcemaps" }));
+        .pipe(dest(path.dest + "./js/", {
+            sourcemaps: "./sourcemaps"
+        }));
 }
 
 function browsersync(done) {
@@ -117,7 +139,9 @@ function browsersync(done) {
 }
 
 function browsersyncReload(done) {
-    browserSync.reload({ stream: true });
+    browserSync.reload({
+        stream: true
+    });
     done();
 }
 
@@ -150,11 +174,13 @@ function wathes(done) {
 } */
 
 function imagesUpdate() {
-  let out = path.images.dest;
-  return gulp.src(path.images.src)
-    .pipe( newer(out) )
-    .pipe( imagemin({ optimizationLevel:5 }) )
-    .pipe( gulp.dest(out) );
+    let out = path.images.dest;
+    return gulp.src(path.images.src)
+        .pipe(newer(out))
+        .pipe(imagemin({
+            optimizationLevel: 5
+        }))
+        .pipe(gulp.dest(out));
 }
 
 /* setting exports
@@ -166,7 +192,7 @@ exports.default = series(
         jsComplile,
         jsComplileVendor,
         sassComplile,
-     //   jsUpdate,
+        //   jsUpdate,
         imagesUpdate
     ),
     parallel(wathes, browsersync)

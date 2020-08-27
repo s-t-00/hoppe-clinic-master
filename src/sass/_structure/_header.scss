@@ -63,7 +63,7 @@ header
         }
 
         &:nth-child(1) {
-          background: $color-green;
+          background: $color-blue;
 
           p {
             color: $color-white;
@@ -71,8 +71,8 @@ header
         }
 
         &:nth-child(2) {
-          background: $color-light-green;
-          background-color: #47AF53;
+          background: $color-light-blue;
+          background-color: #4468BB;
           position: static;
 
 
@@ -135,7 +135,7 @@ header
           @include font-size(40);
           position: relative;
           font-weight: bold;
-          color: $color-green;
+          color: $color-blue;
 
           &::before {
             position: absolute;
@@ -145,7 +145,7 @@ header
             width: 33px;
             height: 33px;
             margin-top: -16px;
-            background: url(/images/icon-tel-green.svg) top left no-repeat;
+            background: url(/images/icon-tel-blue.svg) top left no-repeat;
             background-size: 33px 33px;
           }
         }
@@ -183,7 +183,7 @@ header
             height: 45px;
             top: 0;
             left: 0;
-            background: $color-green;
+            background: $color-blue;
           }
 
           a {
@@ -197,7 +197,7 @@ header
 
             span {
               @include font-size(12);
-              color: $color-green;
+              color: $color-blue;
             }
           }
         }
@@ -215,7 +215,7 @@ header
             height: 45px;
             top: 0;
             right: 0;
-            background: $color-green;
+            background: $color-blue;
           }
         }
       }
