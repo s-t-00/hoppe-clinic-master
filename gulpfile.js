@@ -125,9 +125,9 @@ function browsersync(done) {
         open: "local",
         server: {
             baseDir: path.dest
-            //index: "index.html"
+            // index: "index.html"
         },
-        startPath: '___pagelist.html',
+        startPath: 'index.html',
         ghostMode: {
             clicks: false,
             forms: true,
