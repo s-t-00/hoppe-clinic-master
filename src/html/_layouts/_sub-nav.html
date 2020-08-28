@@ -1,20 +1,20 @@
 {% import "_data/globalConfig.html" as global %}
 <div class="sub-wrappe">
   <figure class="reserved-bnr sp-none"><a href="#"><img src="/images/bnr-online-reserved-pc-02.svg" alt=""></a></figure>
-  <div class="sub-menu">
+  <!-- <div class="sub-menu">
     <h4 class="menu-hd">診療科目</h4>
     <ul class="sub-menu-list">
       {% for item in global.examination.list %}
       <li>{{item.name | safe}}</li>
       {% endfor %}
     </ul>
-  </div>
+  </div> -->
   <!-- sub-menu -->
   <div class="sub-schedule">
-    <h4 class="schedule-hd">診療時間</h4>
+    <h4 class="schedule-hd">営業時間</h4>
     <table class="schedule-list">
       <tr>
-        <th class="schedule-haeder">診療時間</th>
+        <th class="schedule-haeder">営業時間</th>
         <th>月</th>
         <th>火</th>
         <th>水</th>
@@ -24,16 +24,16 @@
         <th>日</th>
       </tr>
       <tr>
-        <td class="schedule-haeder">9:00〜12:30</td>
+        <td class="schedule-haeder">9:00〜18:30</td>
         <td>●</td>
         <td>●</td>
-        <td>●</td>
+        <td><span>／</span></td>
         <td>●</td>
         <td>●</td>
         <td>▲</td>
         <td><span>／</span></td>
       </tr>
-      <tr>
+      <!-- <tr>
         <td class="schedule-haeder">14:00〜17:30</td>
         <td>●</td>
         <td>●</td>
@@ -42,13 +42,11 @@
         <td>●</td>
         <td><span>／</span></td>
         <td><span>／</span></td>
-      </tr>
+      </tr> -->
     </table>
     <div class="sub-text">
-      △9:00〜13:00／休診日：木曜・日曜・祝日<br>
-      【初診の最終受付時間】<br>
-      午前 12時／午後 18時まで<br>
-      ※12時以降・18時以降は予約診療となります
+      △···9:00〜13:00<br>
+      定休日：木曜・日曜・祝日<br>
     </div>
   </div>
   <!-- sub-schedule -->
@@ -56,14 +54,14 @@
     <h4 class="access-hd">アクセス</h4>
     <div class="access-map">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.7580301929393!2d139.6987970152587!3d35.68295958019401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ccf5503e5bd%3A0x3423e2cc25bd01e9!2z44CSMTUxLTAwNTMg5p2x5Lqs6YO95riL6LC35Yy65Luj44CF5pyo77yR5LiB55uu77yT77yY4oiS77yR77yX!5e0!3m2!1sja!2sjp!4v1596119993649!5m2!1sja!2sjp"
-        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3228.4105438941788!2d139.59136345065045!3d35.98583418002692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018cf2d5d211203%3A0x5c0fcb454516008!2z44Ob44OD44Oa6Jas5bGA!5e0!3m2!1sja!2sjp!4v1598597713694!5m2!1sja!2sjp"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe> </div>
     <div class="access-panel">
       <span><a href="#" class="button">Google Mapで見る</a></span>
       <div class="sub-text">
-        〒362-0014<br>埼玉県 上尾市本町6-8-22<br>○●○●○●○●クリニック
-        <span>○●○●駅○●改札口より徒歩○●分○●○●駅○●改札口より徒歩○●分○●○●○●○●の隣です</span>
+        〒362-0014<br>埼玉県 上尾市本町6-8-22
+        <span>JR高崎線北上尾駅から車で8分</span>
       </div>
     </div>
   </div>
