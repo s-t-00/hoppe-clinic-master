@@ -85,9 +85,9 @@ function sassComplile() {
         .pipe(sass({
             outputStyle: "expanded"
         }))
-        .pipe(sass({
-            outputStyle: "compressed"
-        }))
+        // .pipe(sass({
+        //     outputStyle: "compressed"
+        // }))
         .pipe(postcss([autoprefixer(), mqpacker()]))
         .pipe(dest(path.dest + "./css/", {
             sourcemaps: "./sourcemaps"
