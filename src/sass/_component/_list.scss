@@ -122,14 +122,14 @@
       font-weight: bold;
 
       li {
-        display: flex;
+        // display: flex;
         justify-content: flex-start;
         margin: 10px 0;
         padding: 20px 0;
-        border-bottom: 1px dashed $color-gray;
+        border-bottom: 1px solid $color-blue;
 
         &:first-child {
-          border-top: 1px dashed $color-gray;
+          border-top: 1px solid $color-blue;
         }
 
         span {
