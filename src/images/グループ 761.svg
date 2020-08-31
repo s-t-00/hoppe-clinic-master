@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e69600;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 42px;
+        font-family: HiraKakuPro-W6, Hiragino Kaku Gothic Pro;
+      }
+    </style>
+  </defs>
+  <g id="グループ_761" data-name="グループ 761" transform="translate(-4773 621)">
+    <rect id="長方形_287" data-name="長方形 287" class="cls-1" width="65" height="65" transform="translate(4773 -621)"/>
+    <text id="Q" class="cls-2" transform="translate(4788 -573)"><tspan x="0" y="0">Q</tspan></text>
+  </g>
+</svg>

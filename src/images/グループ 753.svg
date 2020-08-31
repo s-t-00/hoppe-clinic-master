@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="79" viewBox="0 0 140 79">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4668be;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 18px;
+        font-family: HiraKakuPro-W6, Hiragino Kaku Gothic Pro;
+      }
+    </style>
+  </defs>
+  <g id="グループ_753" data-name="グループ 753" transform="translate(-2094 1801)">
+    <g id="グループ_740" data-name="グループ 740" transform="translate(1984 -3448)">
+      <path id="パス_3407" data-name="パス 3407" class="cls-1" d="M0,0H140V79H0Z" transform="translate(110 1647)"/>
+      <text id="初めての_患者様の場合" data-name="初めての
+患者様の場合" class="cls-2" transform="translate(122 1661)"><tspan x="22" y="16">初めての</tspan><tspan x="4" y="46">患者様の場合</tspan></text>
+    </g>
+  </g>
+</svg>

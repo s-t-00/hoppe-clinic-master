@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="734" height="1003" viewBox="0 0 734 1003">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-4 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        fill: #484848;
+        font-size: 18px;
+        font-family: HiraKakuPro-W3, Hiragino Kaku Gothic Pro;
+      }
+
+      .cls-3 {
+        fill: #4568be;
+        font-size: 20px;
+        font-family: HiraKakuPro-W6, Hiragino Kaku Gothic Pro;
+      }
+
+      .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke-dasharray: 3;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="グループ_762" data-name="グループ 762" transform="translate(-4846 1342)">
+    <g id="長方形_288" data-name="長方形 288" class="cls-1" transform="translate(4846 -1342)">
+      <rect class="cls-5" width="734" height="1003"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="733" height="1002"/>
+    </g>
+    <g id="グループ_742" data-name="グループ 742" transform="translate(4746 -2269)">
+      <text id="お食事の約30分から1時間前にお飲みください_胃の中に食べ物がない方が_良く吸収されるお薬や_吐き気止め_胃腸の動きを良くするお薬などがあります_" data-name="お食事の約30分から1時間前にお飲みください。胃の中に食べ物がない方が 良く吸収されるお薬や、吐き気止め、胃腸の動きを良くするお薬などがあります。" class="cls-2" transform="translate(195 953)"><tspan x="0" y="16">お食事の約30分から1時間前にお飲みください。胃の中に食べ物がない方が </tspan><tspan x="0" y="51">良く吸収されるお薬や、吐き気止め、胃腸の動きを良くするお薬などがあり</tspan><tspan x="0" y="86">ます。</tspan></text>
+      <text id="食前" class="cls-3" transform="translate(124 971)"><tspan x="0" y="0">食前</tspan></text>
+    </g>
+    <g id="グループ_743" data-name="グループ 743" transform="translate(4746 -1894)">
+      <text id="お食事後_すぐにお飲みください_胃の中に食べ物があるので_胃腸障害を防ぎます_また_食べ物と一緒の方が効果的なお薬もあります_" data-name="お食事後、すぐにお飲みください。胃の中に食べ物があるので、胃腸障害を防ぎます。また、食べ物と一緒の方が効果的なお薬もあります。" class="cls-2" transform="translate(195 953)"><tspan x="0" y="16">お食事後、すぐにお飲みください。胃の中に食べ物があるので、胃腸障害を</tspan><tspan x="0" y="51">防ぎます。また、食べ物と一緒の方が効果的なお薬もあります。</tspan></text>
+      <text id="食直後" class="cls-3" transform="translate(124 971)"><tspan x="0" y="0">食直後</tspan></text>
+    </g>
+    <g id="グループ_744" data-name="グループ 744" transform="translate(4746 -2135)">
+      <text id="お食事前の15分_お薬によっては10分_から食べ始める直前までの間に_お飲みください_食後の高血糖を防ぐ糖尿病薬は_食直前のものがあります_" data-name="お食事前の15分（お薬によっては10分）から食べ始める直前までの間に、お飲みください。
+食後の高血糖を防ぐ糖尿病薬は、食直前のものがあります。" class="cls-2" transform="translate(195 953)"><tspan x="0" y="16">お食事前の15分（お薬によっては10分）から食べ始める直前までの間に、</tspan><tspan x="0" y="51">お飲みください。</tspan><tspan x="0" y="86">食後の高血糖を防ぐ糖尿病薬は、食直前のものがあります。</tspan></text>
+      <text id="食直前" class="cls-3" transform="translate(124 971)"><tspan x="0" y="0">食直前</tspan></text>
+    </g>
+    <g id="グループ_745" data-name="グループ 745" transform="translate(4747 -1690)">
+      <text id="寝る時間の約30分前にお飲みください_睡眠薬_夜間の胃酸分泌を抑えるお薬_朝の排便を期待する便秘薬などがあります_" data-name="寝る時間の約30分前にお飲みください。睡眠薬、夜間の胃酸分泌を抑えるお薬、朝の排便を期待する便秘薬などがあります。" class="cls-2" transform="translate(195 953)"><tspan x="0" y="16">寝る時間の約30分前にお飲みください。睡眠薬、夜間の胃酸分泌を抑える</tspan><tspan x="0" y="51">お薬、朝の排便を期待する便秘薬などがあります。</tspan></text>
+      <text id="就寝前" class="cls-3" transform="translate(124 971)"><tspan x="0" y="0">就寝前</tspan></text>
+    </g>
+    <g id="グループ_746" data-name="グループ 746" transform="translate(4747 -1588)">
+      <text id="食事の時間等に関係なく_医師_薬剤師に指定された時間にお飲み下さい_血液中の薬の濃度を一定にするために_一定の間隔で服用する必要のある薬などが該当します_" data-name="食事の時間等に関係なく、医師・薬剤師に指定された時間にお飲み下さい。血液中の薬の濃度を一定にするために、一定の間隔で服用する必要のある薬などが該当します。" class="cls-2" transform="translate(195 953)"><tspan x="0" y="16">食事の時間等に関係なく、医師・薬剤師に指定された時間にお飲み下さい。</tspan><tspan x="0" y="51">血液中の薬の濃度を一定にするために、一定の間隔で服用する必要のある薬</tspan><tspan x="0" y="86">などが該当します。</tspan></text>
+      <text id="時間毎" class="cls-3" transform="translate(124 971)"><tspan x="0" y="0">時間毎</tspan></text>
+    </g>
+    <g id="グループ_747" data-name="グループ 747" transform="translate(4747 -1447)">
+      <text id="_食後_や_時間毎_ではなく_医師の指示に従って_必要な時にお飲みください_お薬によって_1日の服用回数や_服用の間隔が異なりますので_お受け取りの際にご説明します_痛み止めや熱さまし_咳止め_吐き気や下痢止めのお薬などがあります_" data-name="「食後」や、「時間毎」ではなく、医師の指示に従って、必要な時にお飲みください。お薬によって、1日の服用回数や、服用の間隔が異なりますので、お受け取りの際にご説明します。
+痛み止めや熱さまし、 咳止め、吐き気や下痢止めのお薬などがあります。" class="cls-2" transform="translate(195 953)"><tspan x="0" y="16">「食後」や、「時間毎」ではなく、医師の指示に従って、必要な時にお飲み</tspan><tspan x="0" y="51">ください。お薬によって、1日の服用回数や、服用の間隔が異なりますの</tspan><tspan x="0" y="86">で、お受け取りの際にご説明します。</tspan><tspan x="0" y="121">痛み止めや熱さまし、 咳止め、吐き気や下痢止めのお薬などがあります。</tspan></text>
+      <text id="頓服" class="cls-3" transform="translate(124 971)"><tspan x="0" y="0">頓服</tspan></text>
+    </g>
+    <g id="グループ_748" data-name="グループ 748" transform="translate(4745 -1996)">
+      <text id="お食事後_30分以内にお飲みください_忘れやすい方は_食直後に飲んでもかまいません_" data-name="お食事後、30分以内にお飲みください。忘れやすい方は、食直後に飲んでもかまいません。" class="cls-2" transform="translate(195 953)"><tspan x="0" y="16">お食事後、30分以内にお飲みください。忘れやすい方は、食直後に飲んでも</tspan><tspan x="0" y="51">かまいません。</tspan></text>
+      <text id="食後" class="cls-3" transform="translate(124 971)"><tspan x="0" y="0">食後</tspan></text>
+    </g>
+    <line id="線_586" data-name="線 586" class="cls-4" x2="674" transform="translate(4876.5 -1202.5)"/>
+    <line id="線_587" data-name="線 587" class="cls-4" x2="674" transform="translate(4870.5 -1063.5)"/>
+    <line id="線_588" data-name="線 588" class="cls-4" x2="674" transform="translate(4870.5 -859.5)"/>
+    <line id="線_589" data-name="線 589" class="cls-4" x2="674" transform="translate(4870.5 -655.5)"/>
+    <line id="線_590" data-name="線 590" class="cls-4" x2="674" transform="translate(4875.5 -514.5)"/>
+    <line id="線_591" data-name="線 591" class="cls-4" x2="674" transform="translate(4875.5 -961.5)"/>
+    <g id="グループ_749" data-name="グループ 749" transform="translate(4746 -1792)">
+      <text id="お食事とお食事の間で_食後約2時間後を目安にお飲みください_お食事の最中に飲む_という意味ではないので_ご注意ください_" data-name="お食事とお食事の間で、食後約2時間後を目安にお飲みください。
+「お食事の最中に飲む」という意味ではないので、ご注意ください。" class="cls-2" transform="translate(195 953)"><tspan x="0" y="16">お食事とお食事の間で、食後約2時間後を目安にお飲みください。</tspan><tspan x="0" y="51">「お食事の最中に飲む」という意味ではないので、ご注意ください。</tspan></text>
+      <text id="食直後-2" data-name="食直後" class="cls-3" transform="translate(124 971)"><tspan x="0" y="0">食直後</tspan></text>
+    </g>
+    <line id="線_592" data-name="線 592" class="cls-4" x2="674" transform="translate(4869.5 -757.5)"/>
+  </g>
+</svg>

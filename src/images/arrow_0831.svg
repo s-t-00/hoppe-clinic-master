@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="721" height="24" viewBox="0 0 721 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6579ac;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #6579ac;
+      }
+    </style>
+  </defs>
+  <g id="グループ_763" data-name="グループ 763" transform="translate(-100.5 -1908)">
+    <path id="多角形_1" data-name="多角形 1" class="cls-1" d="M26.5,0,53,23H0Z" transform="translate(492 1932) rotate(180)"/>
+    <line id="線_582" data-name="線 582" class="cls-2" x2="721" transform="translate(100.5 1908.5)"/>
+  </g>
+</svg>
