@@ -5,6 +5,7 @@
  Setting
 -------------------------------------------------------------------*/
 @include touch {
+
   html,
   body {
     width: 100%;
@@ -18,7 +19,8 @@
     vertical-align: middle;
   }
 
-  a, a:hover {
+  a,
+  a:hover {
     color: $font-color;
     text-decoration: none;
   }
@@ -26,11 +28,17 @@
   iframe {
     max-width: 100%;
   }
-  
+
   .is_notTouchDevice a:hover {
     opacity: .8;
   }
 }
 
-@include desktop {
+@include desktop {}
+
+
+@media screen and (max-width: 767px) {
+  img {
+    // width: 30%;
+  }
 }

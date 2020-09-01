@@ -4,6 +4,57 @@
 } %}
 {% block content %}
 
+<style scoped>
+  /* pc */
+  @media (min-width: 768px) {
+    .about-column-title {
+      font-size: 25px;
+      color: #4468BB;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .about-history-image {
+      color: #4468BB;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .bottom-image {
+      display: none;
+    }
+  }
+
+
+  /* sp */
+  @media (max-width: 767px) {
+    /* img {
+      width: 30%;
+    } */
+
+    .about-column-title {
+      font-size: 20px;
+      margin-top: 20px;
+      color: #4468BB;
+      font-weight: bold;
+
+    }
+
+    .about-history-image {
+      font-size: 15px;
+      margin-top: 15px;
+      color: #4468BB;
+      font-weight: bold;
+
+    }
+
+    .about-history-image img {
+      width: 30%;
+    }
+  }
+</style>
+
 <section class="about-main-visual">
   <div class="about-main-image">
     <h1 class="title">{{page.title}}</h1>
@@ -15,9 +66,9 @@
     <div class="main-wrappe">
       <div class="about-column">
         <h2>当薬局ご紹介</h2>
-        <div style="color: #4468BB; font-size: 25px; font-weight: bold;">
+        <div class="about-column-title" style="">
           調剤薬局の役割
-        </div><br><br>
+        </div><br>
         <div class="about-intro">
           <div class="about-intro-text">
 
@@ -47,13 +98,14 @@
           <figure><img src="images/マスクグループ 26.svg" alt=""></figure>
         </div>
         <!-- about-intro -->
-        <div style="color: #4468BB; font-size: 25px; font-weight: bold;">
+        <br>
+        <div class="about-column-title" style="">
           調剤のながれ
-        </div><br>
+        </div>
 
         <div class="about-history">
           <!-- <h4>経歴</h4> -->
-          <div style="color: #4468BB; font-size: 20px; font-weight: bold; margin-bottom: 10px;">
+          <div class="about-history-image" style="">
             <img src="images/グループ 752.svg" alt="">
             患者様より処方せんをいただきます
           </div>
@@ -62,9 +114,14 @@
           <div class="about-menu" style="margin-top: 20px; margin-bottom: 20px;">
             <ul>
               <div style="font-weight: 100;">
-                <figure><img style="float: left; margin-right: 30px; margin-top: 6px;" src="images/グループ 753.svg" alt="">
-                </figure>
-                副作用歴・アレルギー歴・飲み合わせなどの確認のため、問診票への記入をお願いしております。<br>お手数ですが、ご協力をお願いいたします。
+                <div class="about-history-image" style="">
+                  <figure><img style="float: left; margin-right: 30px; margin-top: 6px; max-height: 70px; width: auto;"
+                      src="images/グループ 753.svg" alt="">
+                  </figure>
+                </div>
+                <div style="">
+                  副作用歴・アレルギー歴・飲み合わせなどの確認のため、問診票への記入をお願いしております。<br>お手数ですが、ご協力をお願いいたします。
+                </div>
               </div>
             </ul>
           </div>
@@ -78,9 +135,11 @@
             <li>
               <figure><img src="images/arrow_0831.svg" style="margin-bottom: 20px;" alt=""></figure>
               <span>
-                <img src="images/グループ 754.svg" alt="">
+                <div class="about-history-image" style="">
+                  <img src="images/グループ 754.svg" alt="">
+                  調剤を行います
+                </div>
 
-                調剤を行います
               </span>
               <!-- <p>○○大学○○学部卒業</p> -->
               <div style="font-weight: 100;">
@@ -90,8 +149,12 @@
             <li>
               <figure><img src="images/arrow_0831.svg" style="margin-bottom: 20px;" alt=""></figure>
               <span>
-                <img src="images/グループ 755.svg" alt="">
-                不備がないか確認します</span>
+                <div class="about-history-image" style="">
+                  <img src="images/グループ 755.svg" alt="">
+                  不備がないか確認します
+                </div>
+
+              </span>
               <!-- <p>○○○○○○○○○○</p> -->
               <div style="font-weight: 100;">
                 別の薬剤師が調剤内容を監査します。（二重にチェックを行っています。）<br>コンピュータで出力された内容にも不備がないかを確認します。
@@ -99,17 +162,28 @@
             </li>
             <li>
               <figure><img src="images/arrow_0831.svg" style="margin-bottom: 20px;" alt=""></figure>
-              <span><img src="images/グループ 756.svg" alt="">
-                お薬をお渡しします</span>
+              <span>
+
+                <div class="about-history-image" style="">
+                  <img src="images/グループ 756.svg" alt="">
+                  お薬をお渡しします
+                </div>
+              </span>
               <!-- <p>○○○○クリニック開業</p> -->
+
               <div style="font-weight: 100;">
                 患者さまにお薬をお渡しし、現在の服薬状況を確認しながらお薬の服用や保存についてご説明します。
               </div>
             </li>
             <li>
               <figure><img src="images/arrow_0831.svg" style="margin-bottom: 20px;" alt=""></figure>
-              <span><img src="images/グループ 757.svg" alt="">
-                ご不明な点をお伺いします</span>
+              <span>
+                <div class="about-history-image" style="">
+                  <img src="images/グループ 757.svg" alt="">
+                  ご不明な点をお伺いします
+                </div>
+
+              </span>
               <!-- <p>○○○○クリニック開業</p> -->
               <div style="font-weight: 100;">
                 処方されたお薬に対し、患者さまからの疑問やお申し出等があれば、お答えします。<br>また、医師による確認が必要な場合は医療機関に疑義照会(確認)を行います。
@@ -117,8 +191,13 @@
             </li>
             <li>
               <figure><img src="images/arrow_0831.svg" style="margin-bottom: 20px;" alt=""></figure>
-              <span><img src="images/グループ 758.svg" alt="">
-                お会計</span>
+              <span>
+                <div class="about-history-image" style="">
+                  <img src="images/グループ 758.svg" alt="">
+                  お会計
+                </div>
+
+              </span>
               <!-- <p>○○○○クリニック開業</p> -->
               <div style="font-weight: 100;">
                 確認後問題がなければ、お会計をさせていただきます。
@@ -126,6 +205,8 @@
             </li>
           </ul>
         </div>
+
+        <img class="bottom-image" src="images/bnr-online-reserved-sp1.svg" alt="">
         <!-- about-history -->
         <!-- <div class="about-menu">
           <h3>実施している検査・治療</h3>
