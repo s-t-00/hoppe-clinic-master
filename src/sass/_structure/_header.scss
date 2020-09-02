@@ -13,7 +13,8 @@ header
     margin: 15px 20px;
 
     .header-site-logo img {
-      height: 30px;
+      height: auto;
+      width: 60%;
     }
 
     a.navbar-opener {
@@ -113,8 +114,9 @@ header
       vertical-align: middle;
 
       .header-site-logo img {
-        height: 75px;
-        width: auto;
+        margin-top: 20px;
+        width: 270px;
+        height: auto;
       }
 
       a.navbar-opener {

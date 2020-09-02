@@ -1,10 +1,23 @@
+<style scoped>
+  /* pc */
+  @media (min-width: 768px) {
+    .header-site-logo img {}
+  }
+
+
+  /* sp */
+  @media (max-width: 767px) {}
+</style>
+
+
+
 <nav class="box-wrapper" aria-label="main navigation">
   <div class="box-inner">
     <div class="header-main">
       <div class="header-logo">
         {% if (page.top == 'true') %}<h1>{% else %}<p>{% endif %}
-            <a href="/" class="header-site-logo"><img src="images/グループ 739.svg"
-                style="margin-top: 20px; width: 270px; height: auto;" alt="{{global.site.sitename}}"></a>
+            <a href="/" class="header-site-logo"><img src="images/グループ 739.svg" style=""
+                alt="{{global.site.sitename}}"></a>
             {% if (page.top == 'true') %}</h1>{% else %}</p>{% endif %}
         <a href="javascript:;" class="navbar-opener"></a>
       </div>
