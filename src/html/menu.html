@@ -5,6 +5,40 @@
 } %}
 {% block content %}
 
+<style scoped>
+  /* pc */
+  @media (min-width: 768px) {
+    .about-column-title {
+      font-size: 20px;
+      color: #4468BB;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+  }
+
+
+  /* sp */
+  @media (max-width: 767px) {
+    .about-column-title {
+      font-size: 20px;
+      color: #4468BB;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+  }
+</style>
+
+
+
+
 <section class="menu-main-visual">
   <div class="menu-main-image">
     <h1 class="title">{{page.title}}</h1>
@@ -16,6 +50,37 @@
     <div class="main-wrappe">
       <div class="menu-column">
         <h2>「ホッペ」について</h2>
+        <br>
+
+        <div style="text-align: center;">
+          <img style="" src="images/logo_hoppe.svg" alt="">
+          <div class="about-column-title">
+            当薬局は「電子お薬手帳ホッペ」の提携薬局です
+          </div>
+        </div>
+
+
+        <div class="about-menu" style="margin-top: 20px; margin-bottom: 20px;">
+          <ul>
+            <div style="font-weight: 100;">
+              <div class="about-history-image" style="">
+                <figure><img style="float: left; margin-right: 30px; margin-top: 6px; max-height: 70px; width: auto;"
+                    src="images/グループ 759.svg" alt="">
+                </figure>
+              </div>
+              <br>
+              <br>
+              <br>
+
+              <div class="normal-text" style="">
+                「電子お薬手帳ホッペ」は利用できる調剤薬局が一番多い電子お薬手帳です。<br>（2016年9月27日調べ）<br>薬剤師さんとのメッセージ機能や、お薬データの登録、健康管理や、お薬飲み忘れ防止アラームなど······<br>お薬と付き合う日々の中で嬉しい機能満載の電子お薬手帳アプリです！<br>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+
+
         {% for item in global.examination.list %}
         <div class="main-menu-list">
           <div class="main-menu-text">
