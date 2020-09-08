@@ -4,6 +4,546 @@
 } %}
 {% block content %}
 
+
+<style scoped>
+  /* pc */
+  @media (min-width: 768px) {
+    /* h3 {
+      border-bottom: thin solid;
+      border-top: thin solid;
+    }
+    h3::before {
+      background-color: white;
+    } */
+
+
+    .head-bar {
+      /* background: #ccc; */
+      box-sizing: border-box;
+      height: 50px;
+      padding: 10px 2.5%;
+      border-bottom: thin solid;
+      border-top: thin solid;
+      height: auto;
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .head-bar img {
+      margin-right: 10px;
+    }
+
+    .menu-btn01,
+    .menu-btn01 span {
+      display: inline-block;
+      transition: all .4s;
+      box-sizing: border-box;
+    }
+
+    .menu-btn01 {
+      display: block;
+      float: right;
+      margin: 0 auto;
+      position: relative;
+      width: 40px;
+      height: 30px;
+      margin-top: 12px;
+    }
+
+    .menu-btn01 span {
+      /* position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #000; */
+      display: none;
+    }
+
+    .menu-btn01 span:nth-of-type(1) {
+      top: 0;
+    }
+
+    .menu-btn01 span:nth-of-type(2) {
+      top: 13px;
+    }
+
+    .menu-btn01 span:nth-of-type(3) {
+      bottom: 0;
+    }
+
+    .sp-menu01 {
+      display: none;
+    }
+
+    .sp-menu01 li {
+      box-sizing: border-box;
+      border-bottom: 1px solid #fff;
+
+      /* background: #000; */
+      box-sizing: border-box;
+      color: #fff;
+      display: block;
+      font-size: 16px;
+      line-height: 26px;
+      padding: 5px 10px;
+      text-decoration: none;
+      width: 100%;
+    }
+
+
+
+
+
+
+
+    .menu-btn02,
+    .menu-btn02 span {
+      display: inline-block;
+      transition: all .4s;
+      box-sizing: border-box;
+    }
+
+    .menu-btn02 {
+      display: block;
+      float: right;
+      margin: 0 auto;
+      position: relative;
+      width: 40px;
+      height: 30px;
+      margin-top: 12px;
+    }
+
+    .menu-btn02 span {
+      /* position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #000; */
+      display: none;
+    }
+
+    .menu-btn02 span:nth-of-type(1) {
+      top: 0;
+    }
+
+    .menu-btn02 span:nth-of-type(2) {
+      top: 13px;
+    }
+
+    .menu-btn02 span:nth-of-type(3) {
+      bottom: 0;
+    }
+
+    .sp-menu02 {
+      display: none;
+    }
+
+    .sp-menu02 li {
+      box-sizing: border-box;
+      border-bottom: 1px solid #fff;
+
+      /* background: #000; */
+      box-sizing: border-box;
+      color: black;
+      display: block;
+      font-size: 16px;
+      line-height: 26px;
+      padding: 5px 10px;
+      text-decoration: none;
+      width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+    .menu-btn03,
+    .menu-btn03 span {
+      display: inline-block;
+      transition: all .4s;
+      box-sizing: border-box;
+    }
+
+    .menu-btn03 {
+      display: block;
+      float: right;
+      margin: 0 auto;
+      position: relative;
+      width: 40px;
+      height: 30px;
+      margin-top: 12px;
+    }
+
+    .menu-btn03 span {
+      /* position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #000; */
+      display: none;
+    }
+
+    .menu-btn03 span:nth-of-type(1) {
+      top: 0;
+    }
+
+    .menu-btn03 span:nth-of-type(2) {
+      top: 13px;
+    }
+
+    .menu-btn03 span:nth-of-type(3) {
+      bottom: 0;
+    }
+
+    .sp-menu03 {
+      display: none;
+    }
+
+    .sp-menu03 li {
+      box-sizing: border-box;
+      border-bottom: 1px solid #fff;
+
+      /* background: #000; */
+      box-sizing: border-box;
+      color: black;
+      display: block;
+      font-size: 16px;
+      line-height: 26px;
+      padding: 5px 10px;
+      text-decoration: none;
+      width: 100%;
+    }
+
+
+
+
+
+
+    .menu-btn04,
+    .menu-btn04 span {
+      display: inline-block;
+      transition: all .4s;
+      box-sizing: border-box;
+    }
+
+    .menu-btn04 {
+      display: block;
+      float: right;
+      margin: 0 auto;
+      position: relative;
+      width: 40px;
+      height: 30px;
+      margin-top: 12px;
+    }
+
+    .menu-btn04 span {
+      /* position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #000; */
+      display: none;
+    }
+
+    .menu-btn04 span:nth-of-type(1) {
+      top: 0;
+    }
+
+    .menu-btn04 span:nth-of-type(2) {
+      top: 13px;
+    }
+
+    .menu-btn04 span:nth-of-type(3) {
+      bottom: 0;
+    }
+
+    .sp-menu04 {
+      display: none;
+    }
+
+    .sp-menu04 li {
+      box-sizing: border-box;
+      border-bottom: 1px solid #fff;
+
+      /* background: #000; */
+      box-sizing: border-box;
+      color: black;
+      display: block;
+      font-size: 16px;
+      line-height: 26px;
+      padding: 5px 10px;
+      text-decoration: none;
+      width: 100%;
+    }
+
+
+
+
+
+
+    .menu-btn05,
+    .menu-btn05 span {
+      display: inline-block;
+      transition: all .4s;
+      box-sizing: border-box;
+    }
+
+    .menu-btn05 {
+      display: block;
+      float: right;
+      margin: 0 auto;
+      position: relative;
+      width: 40px;
+      height: 30px;
+      margin-top: 12px;
+    }
+
+    .menu-btn05 span {
+      /* position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #000; */
+      display: none;
+    }
+
+    .menu-btn05 span:nth-of-type(1) {
+      top: 0;
+    }
+
+    .menu-btn05 span:nth-of-type(2) {
+      top: 13px;
+    }
+
+    .menu-btn05 span:nth-of-type(3) {
+      bottom: 0;
+    }
+
+    .sp-menu05 {
+      display: none;
+    }
+
+    .sp-menu05 li {
+      box-sizing: border-box;
+      border-bottom: 1px solid #fff;
+
+      /* background: #000; */
+      box-sizing: border-box;
+      color: black;
+      display: block;
+      font-size: 16px;
+      line-height: 26px;
+      padding: 5px 10px;
+      text-decoration: none;
+      width: 100%;
+    }
+
+
+
+
+
+
+
+    .menu-btn06,
+    .menu-btn06 span {
+      display: inline-block;
+      transition: all .4s;
+      box-sizing: border-box;
+    }
+
+    .menu-btn06 {
+      display: block;
+      float: right;
+      margin: 0 auto;
+      position: relative;
+      width: 40px;
+      height: 30px;
+      margin-top: 12px;
+    }
+
+    .menu-btn06 span {
+      /* position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #000; */
+      display: none;
+    }
+
+    .menu-btn06 span:nth-of-type(1) {
+      top: 0;
+    }
+
+    .menu-btn06 span:nth-of-type(2) {
+      top: 13px;
+    }
+
+    .menu-btn06 span:nth-of-type(3) {
+      bottom: 0;
+    }
+
+    .sp-menu06 {
+      display: none;
+    }
+
+    .sp-menu06 li {
+      box-sizing: border-box;
+      border-bottom: 1px solid #fff;
+
+      /* background: #000; */
+      box-sizing: border-box;
+      color: black;
+      display: block;
+      font-size: 16px;
+      line-height: 26px;
+      padding: 5px 10px;
+      text-decoration: none;
+      width: 100%;
+    }
+
+
+
+
+
+
+
+  }
+
+
+  /* sp */
+  @media (max-width: 767px) {}
+</style>
+
+
+<script>
+  $(function () {
+    $(".menu-btn01").click(function () {
+      $(".sp-menu01").slideToggle(200);
+    });
+    $(".sp-menu01 li a").click(function () {
+      $(".sp-menu01").css({ display: "none" });
+    });
+    $('.menu-btn01').click(function () {
+      event.stopPropagation();
+    });
+
+    $(document).click(function (event) {
+      if (!$(event.target).closest('.sp-menu01').length) {
+        $('.sp-menu01').slideUp(200);
+      }
+    });
+  });
+
+
+  $(function () {
+    $(".menu-btn02").click(function () {
+      $(".sp-menu02").slideToggle(200);
+    });
+    $(".sp-menu02 li a").click(function () {
+      $(".sp-menu02").css({ display: "none" });
+    });
+    $('.menu-btn02').click(function () {
+      event.stopPropagation();
+    });
+
+    $(document).click(function (event) {
+      if (!$(event.target).closest('.sp-menu02').length) {
+        $('.sp-menu02').slideUp(200);
+      }
+    });
+  });
+
+
+  $(function () {
+    $(".menu-btn03").click(function () {
+      $(".sp-menu03").slideToggle(200);
+    });
+    $(".sp-menu03 li a").click(function () {
+      $(".sp-menu03").css({ display: "none" });
+    });
+    $('.menu-btn03').click(function () {
+      event.stopPropagation();
+    });
+
+    $(document).click(function (event) {
+      if (!$(event.target).closest('.sp-menu03').length) {
+        $('.sp-menu03').slideUp(200);
+      }
+    });
+  });
+
+
+  $(function () {
+    $(".menu-btn04").click(function () {
+      $(".sp-menu04").slideToggle(200);
+    });
+    $(".sp-menu04 li a").click(function () {
+      $(".sp-menu04").css({ display: "none" });
+    });
+    $('.menu-btn04').click(function () {
+      event.stopPropagation();
+    });
+
+    $(document).click(function (event) {
+      if (!$(event.target).closest('.sp-menu04').length) {
+        $('.sp-menu04').slideUp(200);
+      }
+    });
+  });
+
+
+  $(function () {
+    $(".menu-btn05").click(function () {
+      $(".sp-menu05").slideToggle(200);
+    });
+    $(".sp-menu05 li a").click(function () {
+      $(".sp-menu05").css({ display: "none" });
+    });
+    $('.menu-btn05').click(function () {
+      event.stopPropagation();
+    });
+
+    $(document).click(function (event) {
+      if (!$(event.target).closest('.sp-menu05').length) {
+        $('.sp-menu05').slideUp(200);
+      }
+    });
+  });
+
+
+  $(function () {
+    $(".menu-btn06").click(function () {
+      $(".sp-menu06").slideToggle(200);
+    });
+    $(".sp-menu06 li a").click(function () {
+      $(".sp-menu06").css({ display: "none" });
+    });
+    $('.menu-btn06').click(function () {
+      event.stopPropagation();
+    });
+
+    $(document).click(function (event) {
+      if (!$(event.target).closest('.sp-menu06').length) {
+        $('.sp-menu06').slideUp(200);
+      }
+    });
+  });
+
+
+
+</script>
+
+
+
+
+
+
+
 <section class="first-visit-main-visual">
   <div class="first-visit-main-image">
     <h1 class="title">{{page.title}}</h1>
@@ -15,7 +555,7 @@
     <div class="main-wrappe">
       <div class="first-visit-column">
         <h2>よくあるご質問</h2>
-        <div class="first-visit-note">
+        <!-- <div class="first-visit-note">
           <ul>
             {% set note = {
               "list": [
@@ -54,7 +594,134 @@
             </li>
             {% endfor %}
           </ul>
+        </div> -->
+
+
+
+        <div class="head-bar">
+          <img src="images/グループ 761.svg" alt="">
+          お薬はいつ飲めば良いのでしょうか？
+          <a class="menu-btn01" style="">
+            <img src="images/yazirushi.png" alt="">
+          </a>
         </div>
+
+        <ul class="sp-menu01">
+          <li><img src="images/グループ 762.svg" alt=""></li>
+        </ul>
+        <br>
+
+
+
+
+        <div class="head-bar">
+          <img src="images/グループ 761.svg" alt="">
+          なぜ、水かぬるま湯で飲むのでしょうか？
+          <a class="menu-btn02" style="">
+            <img src="images/yazirushi.png" alt="">
+          </a>
+        </div>
+
+        <ul class="sp-menu02">
+          <li>
+            基本的に、お薬は「水かぬるま湯で飲む」ことで、効果や安全性が保証されています。
+            <br>アルコール・カフェインを含む飲料（緑茶・紅茶・コーヒーなど）・ジュースやスポーツ飲料などで服用した場合、お薬の有効成分の働きを邪魔したり、強い副作用が発生してしまう可能性があります。
+            <br>水やぬるま湯でお薬を飲むのが難しい方は、薬剤師にご相談ください。
+            <br>オブラートや服薬ゼリーなど、患者様に合った服用方法をご案内します。
+          </li>
+        </ul>
+        <br>
+
+
+        <div class="head-bar">
+          <img src="images/グループ 761.svg" alt="">
+          お薬はどこに保管したら良いですか？
+          <a class="menu-btn03" style="">
+            <img src="images/yazirushi.png" alt="">
+          </a>
+        </div>
+
+        <ul class="sp-menu03">
+          <li>
+            直射日光・高温多湿の場所を避け、お子様の手の届かない場所に保存してください。
+            <br>ほとんどのお薬は、1〜30℃の室温保存です。
+            <br>お薬によっては、10℃以下の場所（冷蔵庫）保存、カンなどの密閉容器に保存などの注意が必要なものもありますが、この場合、個別にご案内いたします。
+            <br>また、他の容器への移し替えは避けてください。
+          </li>
+        </ul>
+        <br>
+
+
+
+
+
+        <div class="head-bar">
+          <img src="images/グループ 761.svg" alt="">
+          処方されたお薬が残っています。
+          <br>飲んでもかまいませんか？
+          <a class="menu-btn04" style="">
+            <img src="images/yazirushi.png" alt="">
+          </a>
+        </div>
+
+        <ul class="sp-menu04">
+          <li>
+            残ってしまったお薬は、一度薬局までお持ちください。
+            <br>薬剤師がお薬の状態・残数を確認し、処方日数を調整できるように医師に相談したり、次回の診察の際に医師へ残薬を伝えるためのメモを作成することも可能です。
+            <br>お気軽にご相談ください。
+          </li>
+        </ul>
+        <br>
+
+
+
+
+
+        <div class="head-bar">
+          <img src="images/グループ 761.svg" alt="">
+          処方せんがあれば、
+          <br>どこでも調剤してもらえますか？
+          <a class="menu-btn05" style="">
+            <img src="images/yazirushi.png" alt="">
+          </a>
+        </div>
+
+        <ul class="sp-menu05">
+          <li>
+            「保険薬局」「保険調剤」「処方せん受付」などの表示があるところでは、処方せんをお持ちいただければ、調剤することが可能です。
+            <br>当薬局は調剤薬局ですので、どこの病院の処方せんでも受け付けております。お気軽にお立ち寄りください。
+          </li>
+        </ul>
+        <br>
+
+
+
+
+        <div class="head-bar">
+          <img src="images/グループ 761.svg" alt="">
+          同じお薬をもらうのに、
+          <br>薬局によって料金が違うのはなぜですか？
+          <a class="menu-btn06" style="">
+            <img src="images/yazirushi.png" alt="">
+          </a>
+        </div>
+
+        <ul class="sp-menu06">
+          <li>
+            同じ薬・同じ量でも、薬局によって「技術科」や「薬学管理科」が薬局によって違う場合があるため、料金が異なります。
+            <br>「薬学管理科」につきましては、お薬手帳をお持ちいただければ、料金を抑えることも可能です。
+            <br>また、「ジェネリック薬品」等の適用により、料金を抑えることができます。「ジェネリック薬品」については、適用可能な場合、薬剤師からご説明いたします。
+          </li>
+        </ul>
+        <br>
+
+
+
+
+
+
+
+
         <!-- first-visit-main-note -->
         <figure class="reserved-bnr pc-none"><a href="#"><img src="/images/bnr-online-reserved-sp-01.svg" alt=""></a>
         </figure>
