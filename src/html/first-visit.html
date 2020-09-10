@@ -443,6 +443,13 @@
 
 
 
+    .bottom-image {
+      display: none;
+    }
+
+
+
+
 
 
   }
@@ -600,17 +607,16 @@
     .sp-menu02 li {
       box-sizing: border-box;
       border-bottom: 1px solid #fff;
-
       /* background: #000; */
       box-sizing: border-box;
       color: black;
       display: block;
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 3vw;
+      line-height: 5vw;
       padding: 5px 10px;
       text-decoration: none;
       /* width: 100%; */
-      margin-left: 110px;
+      margin-left: 20%;
       margin-top: 15px;
       text-align: left;
     }
@@ -669,17 +675,16 @@
     .sp-menu03 li {
       box-sizing: border-box;
       border-bottom: 1px solid #fff;
-
       /* background: #000; */
       box-sizing: border-box;
       color: black;
       display: block;
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 3vw;
+      line-height: 5vw;
       padding: 5px 10px;
       text-decoration: none;
       /* width: 100%; */
-      margin-left: 110px;
+      margin-left: 20%;
       margin-top: 15px;
       text-align: left;
     }
@@ -734,17 +739,16 @@
     .sp-menu04 li {
       box-sizing: border-box;
       border-bottom: 1px solid #fff;
-
       /* background: #000; */
       box-sizing: border-box;
       color: black;
       display: block;
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 3vw;
+      line-height: 5vw;
       padding: 5px 10px;
       text-decoration: none;
       /* width: 100%; */
-      margin-left: 110px;
+      margin-left: 20%;
       margin-top: 15px;
       text-align: left;
     }
@@ -799,17 +803,16 @@
     .sp-menu05 li {
       box-sizing: border-box;
       border-bottom: 1px solid #fff;
-
       /* background: #000; */
       box-sizing: border-box;
       color: black;
       display: block;
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 3vw;
+      line-height: 5vw;
       padding: 5px 10px;
       text-decoration: none;
       /* width: 100%; */
-      margin-left: 110px;
+      margin-left: 20%;
       margin-top: 15px;
       text-align: left;
     }
@@ -865,17 +868,16 @@
     .sp-menu06 li {
       box-sizing: border-box;
       border-bottom: 1px solid #fff;
-
       /* background: #000; */
       box-sizing: border-box;
       color: black;
       display: block;
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 3vw;
+      line-height: 5vw;
       padding: 5px 10px;
       text-decoration: none;
       /* width: 100%; */
-      margin-left: 110px;
+      margin-left: 20%;
       margin-top: 15px;
       text-align: left;
     }
@@ -902,18 +904,23 @@
     .q-title {
       display: inline-block;
       margin-left: 4px;
-      margin-top: 18px;
-      margin-bottom: 15px;
+      margin-top: 4%;
+      margin-bottom: 3%;
     }
 
 
 
     .faq-subtitle {
       font-weight: bold;
-      font-size: 4vw;
-      margin-bottom: 10%;
+      font-size: 3vw;
       text-align: center !important;
-      margin-top: 3%;
+      width: 75%;
+      margin: 3% auto 8%;
+    }
+
+
+    .first-visit-column {
+      margin-bottom: 0px;
     }
 
   }
@@ -922,6 +929,12 @@
 
 <script>
   $(function () {
+
+
+    // 最初からコンテンツ表示
+    $(".sp-menu01").show();
+
+
     $(".menu-btn01").click(function () {
       $(".sp-menu01").slideToggle(200);
     });
@@ -1232,6 +1245,14 @@
           </li>
         </ul>
         <br>
+
+
+
+
+        <a href="menu.html">
+          <img class="bottom-image" src="images/bnr-online-reserved-sp1.svg" alt="">
+        </a>
+
 
 
 

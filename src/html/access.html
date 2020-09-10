@@ -4,6 +4,66 @@
 } %}
 {% block content %}
 
+
+
+<style scoped>
+  /* pc */
+  @media (min-width: 768px) {
+    h3 {
+      padding-left: 25px;
+      color: #4468BB;
+    }
+
+    .bottom-image {
+      display: none;
+    }
+
+
+  }
+
+
+  /* sp */
+  @media (max-width: 767px) {
+    .access-panel .button {
+      margin: 0;
+      text-align: center;
+    }
+
+    h3 {
+      padding-left: 17px;
+      color: #4468BB;
+      font-size: 3.5vw;
+    }
+
+    .first-visit-note ul li p,
+    .main-access-info ul li p {
+      font-size: 2.5vw;
+    }
+
+    .bottom-image {
+      margin: 3% auto 10%;
+      width: 90%;
+    }
+
+    a,
+    a:hover {
+      display: flex;
+    }
+
+
+    .button::after {
+      right: auto;
+      margin-left: 8px;
+    }
+
+
+  }
+</style>
+
+
+
+
+
 <section class="main-contetns">
   <div class="contents-container">
     <div class="main-wrappe">
@@ -40,12 +100,21 @@
           </ul>
         </div>
         <!-- main-access-map -->
-        <figure class="reserved-bnr pc-none"><a href="#"><img src="/images/bnr-online-reserved-sp-01.svg" alt=""></a>
-        </figure>
+        <!-- <figure class="reserved-bnr pc-none"><a href="#"><img src="/images/bnr-online-reserved-sp-01.svg" alt=""></a>
+        </figure> -->
       </div>
       <!-- menu-column -->
     </div>
     <!-- main-wrappe -->
+
+
+
+    <a href="menu.html">
+      <img class="bottom-image" src="images/bnr-online-reserved-sp1.svg" alt="">
+    </a>
+
+
+
 
     {% include '_sub-nav.html' %}
     <!-- sub-wrappe -->
